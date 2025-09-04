@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harish — Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <button class="hamburger" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="menu">
+          <a href="#home" class="active">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#Education">Education</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header -->
+    <section id="home" class=" profile">
+      <div>
+        <h1>Software Developer & Data Enthusiast</h1>
+        <p class="muted">
+              Fresher developer with strong knowledge in Java, JDBC, and SQL for backend logic and database management. Experienced in building and querying MySQL databases, writing efficient SQL queries, and ensuring data integrity. Skilled in creating responsive UIs with HTML, CSS, and JavaScript. Familiar with Git/GitHub for version control and collaborative development. Passionate about learning modern tools and building scalable applications.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects"
+            ><i class="fa-solid fa-rocket"></i> View Projects</a
+          >
+          <a class="btn" href="#contact"
+            ><i class="fa-solid fa-envelope"></i> Contact Me</a
+          >
+          <a class="btn" href="./images/HarishK_Resume.pdf" download
+            ><i class="fa-solid fa-download"></i> Download Resume</a
+          >
+        </div>
+      </div>
+      <aside class="photo">
+        <img src="./images/photo.png" alt="Workspace" />
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="skills" class="wrap">
+      <h2 class="title">Skills</h2>
+      <div class="skills">
+        <div class="box">
+          <!-- <p>
+            Fresher developer focusing on backend logic, data modeling, and
+            clean UI. Comfortable with REST APIs, SQL queries, and deploying
+            small apps.
+          </p> -->
+          <div class="pills">
+            <span class="pill">Java</span>
+            <span class="pill">JDBC</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">SQL</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JAVASCRIPT</span>
+            <span class="pill">GIT/GITHUB</span>  
+          </div>
+        </div>
+        <!-- <div class="box">
+          <strong>Highlights</strong>
+          <ul class="muted">
+        <li>Developed responsive web pages using HTML, CSS, and JavaScript</li>
+        <li>Implemented SQL queries for data retrieval, aggregation, and reporting</li>
+        <li>Integrated Git/GitHub for version control and collaborative workflows</li>
+        <li>Hands-on practice with MySQL database design and normalization</li>
+        <li>Strong grasp of problem-solving and debugging techniques</li>
+      </ul>
+    </div> -->
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap">
+      <h2 class="title">Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+          <div class="content">
+            <span class="badge">Java</span>
+            <h3>E-Commerce Backend</h3>
+            <p class="muted">
+              Cart, filtering, and checkout with JDBC + MySQL.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+          <div class="content">
+            <span class="badge">Python</span>
+            <h3>Inventory Manager</h3>
+            <p class="muted">
+              CLI app with SQLite, robust validations and reports.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+          <div class="content">
+            <span class="badge">Web</span>
+            <h3>Portfolio Site</h3>
+            <p class="muted">Responsive portfolio with smooth interactions.</p>
+          </div>
+        </article>
+       
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="Education" class="wrap">
+      <h2 class="title">Education</h2>
+      <div class="education">
+        <div class="edu-card">
+          <h3>
+            Bachelor of Technology (B.Tech) – Computer Science and Business
+            Systems
+          </h3>
+          <p class="muted">Francis Xavier Engineering College, Tirunelveli</p>
+          <span class="sub">2021 – 2025 | <b>CGPA: 7.8/10</b></span>
+        </div>
+
+        <div class="edu-card">
+          <h3>Higher Secondary (HSC)</h3>
+          <p class="muted">
+            ST.Johns Matriculation Higher Secondary School,Kalakad
+          </p>
+          <span class="sub">2020 – 2021 | <b>85%</b></span>
+        </div>
+
+        <div class="edu-card">
+          <h3>Secondary School (SSLC)</h3>
+          <p class="muted">
+            ST.Johns Matriculation Higher Secondary School,Kalakad
+          </p>
+          <span class="sub">2018 – 2019 | <b>81%</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="wrap">
+      <h2 class="title">Achievements</h2>
+      <div class="achievements">
+        <ul>
+          <li>
+            <i class="fa-solid fa-trophy"></i> Journal publications in the title of Automatic alcohol detection and gps tracker using python
+          </li>
+          <li>
+            <i class="fa-solid fa-certificate"></i> Participated in the Cyber security hackthon in Thoothukudi  
+          </li>
+          <li>
+            <i class="fa-solid fa-code"></i> Participated in the National 24 hrs hackthon in college
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="wrap">
+      <h2 class="title">Certifications</h2>
+      <div class="certs">
+        <figure class="cert">
+          <img src="./images/Digital.png" alt="Google Digital Garage Certificate" />
+          <figcaption>
+            Google Digital Garage
+            <span class="sub">Fundamentals of Digital Marketing</span>
+          </figcaption>
+        </figure>
+        <figure class="cert">
+          <img src="./images/Fullstack.png" alt="Analytics Certificate" />
+          <figcaption>
+         Novitech
+            <span class="sub"> Basic Full Stack development</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap contact">
+      <h2 class="title">Contact Me</h2>
+      <form
+        class="form"
+        onsubmit="event.preventDefault(); alert('Thanks! I will reach out soon.');"
+      >
+        <div class="row">
+          <div>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <textarea
+            id="msg"
+            name="message"
+            placeholder="Tell me about your requirement..."
+          ></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn" type="reset">Reset</button>
+          <button class="btn primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    
+            <footer>
+    <p>Connect with me</p>
+    <ul class="social-icons">
+      <li><a class ="gmail" href="mailto:harishkrishnakumarr@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a class ="whatsapp" href="https://wa.me/9345269471" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+      <li><a class ="linkedin" href="https://www.linkedin.com/in/harish-k-6390a9342/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a  class ="instagram"href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a class ="github" href="https://github.com/Harishkrishnkumarr" target="_blank"><i class="fab fa-github"></i></a></li>
+
+      
+    </ul>
+    <p>&copy; Harish | All Rights Reserved</p>
+  </footer>
+  </body>
+</html>
