@@ -1,19 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Select the hamburger icon and the navigation menu
     const hamburger = document.getElementById('hamburger-menu');
     const navMenu = document.getElementById('nav-menu');
+    const overlay = document.querySelector('.overlay');
 
-    // Add a click event listener to the hamburger icon
+    // Toggle the menu and overlay when the hamburger is clicked
     hamburger.addEventListener('click', () => {
-        // Toggle the 'show' class on the menu
         navMenu.classList.toggle('show');
+        overlay.classList.toggle('show');
     });
 
-    // Optional: Close the menu when a link is clicked
+    // Close the menu and overlay when a link is clicked
     const navLinks = navMenu.querySelectorAll('a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('show');
+            overlay.classList.remove('show');
         });
+    });
+
+    // Close the menu and overlay when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+        overlay.classList.remove('show');
     });
 });

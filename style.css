@@ -48,6 +48,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 20px;
+    position: relative;
   }
 
  .menu {
@@ -71,6 +72,8 @@
   display: none; /* Hide on desktop by default */
   cursor: pointer;
   font-size: 24px;
+  color: var(--text);
+    z-index: 1001; 
 }
 
 /* This is the new CSS for the close button inside the menu */
@@ -183,6 +186,18 @@
     color: var(--muted);
     background: #212229;
   }
+
+  /* Add this CSS for the overlay */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark, semi-transparent color */
+  z-index: 999; /* Place it below the menu but above the rest of the content */
+}
 
   /* Projects Grid */
   .grid {
@@ -459,23 +474,23 @@
 
 
     /* The menu's default state on mobile */
-    .nav-inner .menu {
+     .menu {
     /* Your existing sidebar styles */
     position: fixed;
     top: 0;
-    right: -260px;
-    height: 100%;
-    width: 240px;
-    /* background: #111; */
+    right: -260px; /* This is the key line. It pushes the sidebar off the screen. */
+    height: 100vh;
+    width: 200px;
+    background: #080101e1;
     flex-direction: column;
     padding: 60px 20px;
     transition: right 0.3s ease-in-out;
     z-index: 1000;
-    /* color: white; */
+    border-radius:110px 0px 0px 110px;
   }
 
     /* When the 'show' class is added by JavaScript, the menu slides into view */
-    .nav-inner .menu.show {
+    .menu.show {
         right: 0; /* This brings the menu into the visible area */
         
     }
