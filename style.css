@@ -188,16 +188,7 @@
   }
 
   /* Add this CSS for the overlay */
-.overlay {
-  display: none; /* Hidden by default */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Dark, semi-transparent color */
-  z-index: 999; /* Place it below the menu but above the rest of the content */
-}
+
 
   /* Projects Grid */
   .grid {
@@ -466,33 +457,49 @@
 /* Mobile / Tablet */
 
 .hamburger {
-    display: block; /* Show the hamburger menu button on mobile */
-  }
+        display: block; /* Make the hamburger icon visible on mobile */
+        cursor: pointer;
+        font-size: 24px;
+        color: var(--text);
+        z-index: 1001;
+    }
 
+    /* Menu's default hidden state */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -260px; /* Hides the menu off-screen */
+        height: 100vh;
+        width: 240px;
+        background: #111;
+        padding: 60px 20px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        list-style: none;
+        gap: 20px;
+    }
 
-  
-
-
-    /* The menu's default state on mobile */
-     .menu {
-    /* Your existing sidebar styles */
-    position: fixed;
-    top: 0;
-    right: -260px; /* This is the key line. It pushes the sidebar off the screen. */
-    height: 100vh;
-    width: 200px;
-    background: #080101e1;
-    flex-direction: column;
-    padding: 60px 20px;
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
-    border-radius:110px 0px 0px 110px;
-  }
-
-    /* When the 'show' class is added by JavaScript, the menu slides into view */
+    /* When the menu is active */
     .menu.show {
-        right: 0; /* This brings the menu into the visible area */
-        
+        right: 0;
+    }
+    
+    /* Overlay that appears when the menu is open */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+    }
+
+    .overlay.show {
+        display: block;
     }
 
    
@@ -516,6 +523,8 @@
     font-size: 14px;
   }
 }
+
+
 
 
 
