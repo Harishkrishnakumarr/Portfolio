@@ -470,20 +470,21 @@
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: -260px; /* Hides the menu off-screen */
+        right: 0;
         height: 100vh;
         width: 240px;
         background: #111;
         padding: 60px 20px;
-        transition: right 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
         z-index: 1000;
         list-style: none;
         gap: 20px;
+        transform: translateX(100%);
     }
 
     /* When the menu is active */
     .menu.show {
-        right: 0;
+        transform: translateX(0);
     }
     
     /* Overlay that appears when the menu is open */
@@ -523,8 +524,3 @@
     font-size: 14px;
   }
 }
-
-
-
-
-
